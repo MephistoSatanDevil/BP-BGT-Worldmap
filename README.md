@@ -126,7 +126,7 @@ The installer includes the following components.<br /><br />
 
 **1. Worldmap for Baldur's Gate - including colored Baldur's Gate map icons**<br />
 
-You must choose between:
+Depending on the game (engine) you play and/or what mods are installed, you must choose between:
 
 1. Original travel times and area visibility, or
 2. Revised travel times and area visibility.
@@ -137,6 +137,8 @@ and:
 <center><img src="bp-bgt-worldmap/images/worldmap/worldmap_v7.0_large_mini.jpg"></center>
 2. Huge worldmap size (8500x6300).
 <center><img src="bp-bgt-worldmap/images/worldmap/worldmap_v7.0_huge_mini.jpg"></center>
+
+:warning: Note that some modifications/megamodifications (i.e. EET, TDD, SoS, RoT, ...) will force installation of Huge worldmap to properly place and display all locations across the map.
 
 ## 
 
@@ -220,9 +222,11 @@ And a very special thanks to **Roberciiik**, who is always developing the world 
 - Westgate city "insert" added to the Worldmap canvas
 - Added new icons to BPBGTMAP.BAM file for the following modifications:
 	- Classic Adventures
+	- A7-TotLM-BG2EE (Castle Maluradek)
 - Winter Wolf Ritual area can be fast-traveled for Drizzt Saga modification
 - Separated installation prompts from worldmap.tra file
 - Fixed typos in English, Polish and Chinese texts
+- Chinese translation update, by MephistoSatanDevil
 
 ##### Version 13.1.1 (15 April 2024)
 
