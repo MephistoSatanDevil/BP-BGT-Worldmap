@@ -225,6 +225,7 @@ And a very special thanks to **Roberciiik**, who is always developing the world 
 	- Whin Hill (fix for overlapping with The Wailing Dwarf)
 	- Trollford (according to the official AD&D 2e Forgotten Realms map, it is placed southeast from Eshpurta)
 	- Snake Woods (moved to more accurate position according to the official AD&D 2e Forgotten Realms map)
+	- Hall of Knowledge (fix for overlapping with Duskwood Dell)
 - Added new icons to BPBGTMAP.BAM file for the following modifications:
 	- Classic Adventures
 	- A7-TotLM-BG2EE (Castle Maluradek)
