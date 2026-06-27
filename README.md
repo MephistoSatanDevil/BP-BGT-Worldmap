@@ -220,6 +220,8 @@ And a very special thanks to **Roberciiik**, who is always developing the world 
 
 - The Crags mountains are now separated from Surbrin Hills on the Worldmap canvas (thanks to p_zombie for updated image; thanks to Acifer, Mornagest, MephistoSatanDevil, Frenzygyn, alaisFcZ and paladin84 for the translations)
 - Westgate city "insert" added to the Worldmap canvas
+- Updated icons positions:
+	- Whin Hill (fix for overlapping with The Wailing Dwarf)
 - Added new icons to BPBGTMAP.BAM file for the following modifications:
 	- Classic Adventures
 	- A7-TotLM-BG2EE (Castle Maluradek)
