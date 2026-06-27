@@ -222,6 +222,7 @@ And a very special thanks to **Roberciiik**, who is always developing the world 
 - Westgate city "insert" added to the Worldmap canvas
 - Updated icons positions:
 	- Whin Hill (fix for overlapping with The Wailing Dwarf)
+	- Trollford (according to the official AD&D 2e Forgotten Realms map, it is placed southeast from Eshpurta)
 - Added new icons to BPBGTMAP.BAM file for the following modifications:
 	- Classic Adventures
 	- A7-TotLM-BG2EE (Castle Maluradek)

@@ -6,7 +6,7 @@ DD1800      DD1800   DD1800     0      17        2180   2912   @TDD_779001  @TDD
 DD2500      DD2500   DD2500     0      10        2585   2849   N            @TDD_779102  N        //Troll Mountains
 DD5000      DD5000   DD5000     0      11        2397   3059   @TDD_779004  @TDD_779104  N        //Hall of Knowledge Entrance
 DD2300      DD2300   DD2300     4      12        2520   3115   N            @TDD_779103  N        //Eshpurta
-DD9000      DD9000   DD9000     4      10        2550   3000   @TDD_779008  @TDD_779108  N        //Trollford
+DD9000      DD9000   DD9000     4      10        2575   3190   @TDD_779008  @TDD_779108  N        //Trollford
 DD3300      DD3300   DD3300     4      53        2580   3346   N            @TDD_779105  N        //Riatavin
 DD7000      DD7000   DD7000     4      6         2852   3850   @TDD_779009  @TDD_779109  N        //Orgoth's Tower
 DD8000      DD8000   DD8000     4      17        2400   4430   @TDD_779006  @TDD_779106  N        //Deep Mir Forest
