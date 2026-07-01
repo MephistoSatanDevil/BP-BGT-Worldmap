@@ -21,24 +21,23 @@ ACTION_PHP_EACH fl#CONTENT AS area => _ BEGIN
 	END
 END
 
-ACTION_IF hugeworldmap THEN BEGIN
 // ====================================================
 // Large worldmap is not possible
 // ====================================================
-
-PRINT @3003
-OUTER_SET how = 2
-END ELSE BEGIN
+ACTION_IF hugeworldmap THEN BEGIN
+	PRINT @3003
+	OUTER_SET how = 2
+END
 // ==============================================================
 // Choose between large (4900x3500) and huge (8500x6300) worldmap
 // ==============================================================
-
-PRINT @3000
-ACTION_READLN how
-OUTER_WHILE !IS_AN_INT how OR how > 2 OR how < 1 BEGIN
+ELSE BEGIN
 	PRINT @3000
 	ACTION_READLN how
-END
+	OUTER_WHILE !IS_AN_INT how OR how > 2 OR how < 1 BEGIN
+		PRINT @3000
+		ACTION_READLN how
+	END
 END
 
 // ====================================================

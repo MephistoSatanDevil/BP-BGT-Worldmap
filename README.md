@@ -41,7 +41,7 @@ This is the original introduction written by Yacomo:
 
 >Well, nothing to do until I started playing the BP-BGT-NeJ-CtB-DSotSC-BH-NTotSC monster in early 2005. I became a fan of the Check the Bodies worldmap immediately and I fell in love with the spirit of the modding community shortly thereafter. I had to give it back something...
 
->What I never liked about the BP-BGT map was the mix of coloured and black and white icons. So I was already tinkering with the idea of creating coloured versions of all the Baldur's Gate map icons when Horred the Plague posted <a href="http://forums.spellholdstudios.net/index.php?act=ST&amp;f=193&amp;t=13954">link</a> on the former forgottenwars forums...
+>What I never liked about the BP-BGT map was the mix of coloured and black and white icons. So I was already tinkering with the idea of creating coloured versions of all the Baldur's Gate map icons when Horred the Plague posted <a href="https://www.shsforums.net/topic/13954-artist-needed-for-worldmap-revision/">link</a> on the former forgottenwars forums...
 
 >That was the starter I was waiting for! So I picked up the task, made myself comfortable with GIMP (who needs Photoshop - bah :smile: and this is the result - hope ya like it!
 
@@ -126,7 +126,7 @@ The installer includes the following components.<br /><br />
 
 **1. Worldmap for Baldur's Gate - including colored Baldur's Gate map icons**<br />
 
-You must choose between:
+Depending on the game (engine) you play and/or what mods are installed, you must choose between:
 
 1. Original travel times and area visibility, or
 2. Revised travel times and area visibility.
@@ -137,6 +137,8 @@ and:
 <center><img src="bp-bgt-worldmap/images/worldmap/worldmap_v7.0_large_mini.jpg"></center>
 2. Huge worldmap size (8500x6300).
 <center><img src="bp-bgt-worldmap/images/worldmap/worldmap_v7.0_huge_mini.jpg"></center>
+
+:warning: Note that some modifications/megamodifications (i.e. EET, TDD, SoS, RoT, ...) will force installation of Huge worldmap to properly place and display all locations across the map.
 
 ## 
 
@@ -218,11 +220,19 @@ And a very special thanks to **Roberciiik**, who is always developing the world 
 
 - The Crags mountains are now separated from Surbrin Hills on the Worldmap canvas (thanks to p_zombie for updated image; thanks to Acifer, Mornagest, MephistoSatanDevil, Frenzygyn, alaisFcZ and paladin84 for the translations)
 - Westgate city "insert" added to the Worldmap canvas
+- Updated icons positions:
+	- Umar Hills and Temple's ruins (placed closer together and don't overlap with other mods' icons)
+	- Whin Hill (fix for overlapping with The Wailing Dwarf)
+	- Trollford (according to the official AD&D 2e Forgotten Realms map, it is placed southeast from Eshpurta)
+	- Snake Woods (moved to more accurate position according to the official AD&D 2e Forgotten Realms map)
+	- Hall of Knowledge (fix for overlapping with Duskwood Dell)
 - Added new icons to BPBGTMAP.BAM file for the following modifications:
 	- Classic Adventures
+	- A7-TotLM-BG2EE (Castle Maluradek)
 - Winter Wolf Ritual area can be fast-traveled for Drizzt Saga modification
 - Separated installation prompts from worldmap.tra file
 - Fixed typos in English, Polish and Chinese texts
+- Chinese translation update, by MephistoSatanDevil
 
 ##### Version 13.1.1 (15 April 2024)
 

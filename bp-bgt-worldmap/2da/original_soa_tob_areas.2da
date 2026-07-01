@@ -7,12 +7,12 @@ AR0500      AR0500   AR0500     3      23       1206    2927   @777006  N       
 AR0800      AR0800   AR0800     3      20       1282    3033   @777004  N        N        //Graveyard
 AR0900      AR0900   AR0900     3      24       1088    2812   @777007  N        N        //Temple
 AR1000      AR1000   AR1000     3      19       1224    2811   @777008  N        N        //Government
-AR1100      AR1100   AR1100     0      10       2650    3038   @777009  N        N        //Umar Hills
-AR1400      AR1400   AR1400     0      9        2328    2944   @777010  N        N        //Temple Ruins
+AR1100      AR1100   AR1100     0      10       2650    3068   @777009  N        N        //Umar Hills
+AR1400      AR1400   AR1400     0      9        2570    3020   @777010  N        N        //Temple Ruins
 AR1300      AR1300   AR1300     0      12       2000    3024   @777011  N        N        //de'Arnise Hold
 AR1200      AR1200   AR1200     0      11       2936    3200   @777012  N        N        //Windspear Hills
 AR0020      AR0020   AR0020     3      26       1282    2942   @777013  N        N        //City Gates
-AR1404      AR1404   AR1404     0      9        2328    2944   @777010  N        N        //Temple Ruins
+AR1404      AR1404   AR1404     0      9        2570    3020   @777010  N        N        //Temple Ruins
 AR1304      AR1304   AR1304     0      12       2000    3024   @777011  N        N        //de'Arnise Hold
 AR2000      AR2000   AR2000     4      13       2175    3290   N        N        N        //Trademeet
 AR1900      AR1900   AR1900     0      14       2250    3340   @777015  N        N        //Druid Grove
