@@ -231,6 +231,7 @@ And a very special thanks to **Roberciiik**, who is always developing the world 
 	- A7-TotLM-BG2EE (Castle Maluradek)
 - Winter Wolf Ritual area can be fast-traveled for Drizzt Saga modification
 - Separated installation prompts from worldmap.tra file
+- Fixed compatibility issue with SCS's Early Watcher's Keep transition.
 - Fixed typos in English, Polish and Chinese texts
 - Chinese translation update, by MephistoSatanDevil
 

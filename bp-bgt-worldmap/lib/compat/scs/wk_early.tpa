@@ -1,0 +1,6 @@
+
+// Add new link
+LAF install_link_table
+  STR_VAR
+    table = "%MOD_FOLDER%/compat/scs/wk_early_links.tbl"
+END

@@ -43,13 +43,16 @@
 MKDIR worldmap
 
 ACTION_IF MOD_IS_INSTALLED dq.tp2 0 BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/fft.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/fft.tpa"
 END
 ACTION_IF MOD_IS_INSTALLED wheels.tp2 0 BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/wheels.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/wheels.tpa"
 END
 ACTION_IF FILE_EXISTS_IN_GAME "l-sar1.are" AND GAME_INCLUDES ~tob~ BEGIN // Almateria's Restoration Project
-  INCLUDE "bp-bgt-worldmap/lib/compat/arestorationp.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/arestorationp.tpa"
+END
+ACTION_IF MOD_IS_INSTALLED ~setup-stratagems.tp2~ 4190 BEGIN
+  INCLUDE "%MOD_FOLDER%/lib/compat/scs/wk_early.tpa"
 END
 
 ///////////////////////////////////////////////////////////////////////////
@@ -71,9 +74,9 @@ END ELSE BEGIN
 END
 
 ACTION_IF how = 1 BEGIN
-  INCLUDE ~bp-bgt-worldmap/lib/original.tpa~
+  INCLUDE ~%MOD_FOLDER%/lib/original.tpa~
 END ELSE BEGIN
-  INCLUDE ~bp-bgt-worldmap/lib/revised.tpa~
+  INCLUDE ~%MOD_FOLDER%/lib/revised.tpa~
 END
 
 ///////////////////////////////////////////////////////////////////////////
@@ -84,7 +87,7 @@ END
 ACTION_IF MOD_IS_INSTALLED bg2_tweaks.tp2 1030 OR
           MOD_IS_INSTALLED cdtweaks.tp2 1030
 BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/bg2_tweaks/1030.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/bg2_tweaks/1030.tpa"
 END
 
 /* Reveal first Cloakwood area */
@@ -92,7 +95,7 @@ ACTION_IF FILE_EXISTS_IN_GAME X#BG1NPCCloakLodge.G3 OR
           MOD_IS_INSTALLED bg2_tweaks.tp2 1035 OR
           MOD_IS_INSTALLED cdtweaks.tp2 1035
 BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/g3_cloakwood_first.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/g3_cloakwood_first.tpa"
 END
 
 /* Reveal all but the last Cloakwood area */
@@ -100,12 +103,12 @@ ACTION_IF FILE_EXISTS_IN_GAME X#BG1NPCCloakwood.G3 OR
           MOD_IS_INSTALLED bg2_tweaks.tp2 1036 OR
           MOD_IS_INSTALLED cdtweaks.tp2 1036
 BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/g3_cloakwood_allbutlast.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/g3_cloakwood_allbutlast.tpa"
 END
 
 /* Don't reveal Durlag's Tower from adjacent areas */
 ACTION_IF MOD_IS_INSTALLED bgttweak.tp2 2600 BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/bgttweak/2600.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/bgttweak/2600.tpa"
 END
 
 /* Sensible Entrance Points */
@@ -113,10 +116,10 @@ ACTION_IF (MOD_IS_INSTALLED bg2_tweaks.tp2 3220 OR
            MOD_IS_INSTALLED cdtweaks.tp2 3220) AND
            GAME_INCLUDES ~bg1~
 BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/bg2_tweaks/3220.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/bg2_tweaks/3220.tpa"
 END
 
 /* Almateria's Restoration Project, Restored Minor Encounters */
 ACTION_IF FILE_EXISTS_IN_GAME "l-ar01.are" AND GAME_INCLUDES ~tob~ BEGIN
-  INCLUDE "bp-bgt-worldmap/lib/compat/arestorationp/rme.tpa"
+  INCLUDE "%MOD_FOLDER%/lib/compat/arestorationp/rme.tpa"
 END
