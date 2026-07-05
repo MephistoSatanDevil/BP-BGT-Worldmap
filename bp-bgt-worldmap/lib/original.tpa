@@ -1,15 +1,15 @@
 ACTION_IF GAME_IS ~tob bgt~ BEGIN
-  OUTER_SPRINT fl#area_table ~bp-bgt-worldmap/2da/original_soa_tob_areas.2da~
-  OUTER_SPRINT fl#link_table ~bp-bgt-worldmap/2da/original_soa_tob_links.2da~
+  OUTER_SPRINT fl#area_table ~%MOD_FOLDER%/2da/original_soa_tob_areas.2da~
+  OUTER_SPRINT fl#link_table ~%MOD_FOLDER%/2da/original_soa_tob_links.2da~
 END ELSE ACTION_IF GAME_IS ~tutu tutu_totsc~ BEGIN
-  OUTER_SPRINT fl#area_table ~bp-bgt-worldmap/2da/original_tutu_areas.2da~
-  OUTER_SPRINT fl#link_table ~bp-bgt-worldmap/2da/original_tutu_links.2da~
+  OUTER_SPRINT fl#area_table ~%MOD_FOLDER%/2da/original_tutu_areas.2da~
+  OUTER_SPRINT fl#link_table ~%MOD_FOLDER%/2da/original_tutu_links.2da~
 END ELSE ACTION_IF GAME_IS ~bgee~ BEGIN
-  OUTER_SPRINT fl#area_table ~bp-bgt-worldmap/2da/original_bg1ee_areas.2da~
-  OUTER_SPRINT fl#link_table ~bp-bgt-worldmap/2da/original_bg1ee_links.2da~
+  OUTER_SPRINT fl#area_table ~%MOD_FOLDER%/2da/original_bg1ee_areas.2da~
+  OUTER_SPRINT fl#link_table ~%MOD_FOLDER%/2da/original_bg1ee_links.2da~
 END ELSE ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
-  OUTER_SPRINT fl#area_table ~bp-bgt-worldmap/2da/original_bg2ee_areas.2da~
-  OUTER_SPRINT fl#link_table ~bp-bgt-worldmap/2da/original_bg2ee_links.2da~
+  OUTER_SPRINT fl#area_table ~%MOD_FOLDER%/2da/original_bg2ee_areas.2da~
+  OUTER_SPRINT fl#link_table ~%MOD_FOLDER%/2da/original_bg2ee_links.2da~
 END
 
 ////////////////////////////////////////////
@@ -66,7 +66,7 @@ END
 
 ACTION_PHP_EACH mod_tables AS area => table BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME "%area%.are" BEGIN
-    COPY "bp-bgt-worldmap/original/tbl/updates/%table%_areas.tbl" "bp-bgt-worldmap/original/tbl/updates/%table%_areas.tbl"
+    COPY "%MOD_FOLDER%/original/tbl/updates/%table%_areas.tbl" "%MOD_FOLDER%/original/tbl/updates/%table%_areas.tbl"
       LPM read_area_array_from_2da
     BUT_ONLY
   END

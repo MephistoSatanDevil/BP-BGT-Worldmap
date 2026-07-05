@@ -1,5 +1,6 @@
 
-![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/BP-BGT-Worldmap?include_prereleases&color=darkred)<a name="top" id="top"> </a>
+<a name="top" id="top"></a>
+![Latest Release](https://img.shields.io/github/v/release/Spellhold-Studios/BP-BGT-Worldmap?include_prereleases&color=darkred)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish%20%7C%20Russian%20%7C%20Spanish%20%7C%20Simplified%20Chinese&color=limegreen)
 
@@ -11,13 +12,12 @@
 
 
 **Authors:** Yacomo, King Diamond, Erebusant, Weigo, Roberciiik
+<br />
 **Mod Website and Forum:** <a href="http://www.shsforums.net/index.php?showforum=401">Spellhold Studios</a><br /><br />
 
 ## 
 
 [Read the mod's readme](https://spellholdstudios.github.io/readmes/worldmap-readme-english.html)
-
-[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/308-bp-bgt-worldmap/)<br>
 
 ## 
 
@@ -31,19 +31,19 @@
 
 ## <a name="intro" id="intro"></a>Overview
 
-This mod replaces the in-game worldmap with a large, new worldmap. It is used especially for the Megamodification (BGT, TDD, SOS, CtB, TS, DSotSC, NTotSC, SoBH, Drizzt Saga...) or partial installations of the Megamodification. It also includes a full set of coloured map icons. The mod offers the choice between two different worldmap sizes: large and huge. Either of these two worldmaps can be used for BG1, BG2 and ToB. Alternatively, a smaller, specially prepared worldmap can be used for ToB. The mod also offers optional, alternative travel times and area visibility. Lastly, the mod includes a savegame converter, which allows old saved games to be updated to include the new map(s). (The worldmap data is also stored in the savegame files. If you want to install this worldmap, run the savegame converter and you don't have to start a new game.).
+This mod replaces the in-game worldmap with a large, new worldmap. It is used especially for the Megamodification (BGT, TDD, SOS, CtB, TS, DSotSC, NTotSC, SoBH, Drizzt Saga, ...) or partial installations of the Megamodification. It also includes a full set of coloured map icons. The mod offers the choice between two different worldmap sizes: large and huge. Either of these two worldmaps can be used for BG1, BG2 and ToB. Alternatively, a smaller, specially prepared worldmap can be used for ToB. The mod also offers optional, alternative travel times and area visibility. Lastly, the mod includes a savegame converter, which allows old saved games to be updated to include the new map(s). (The worldmap data is also stored in the savegame files. If you want to install this worldmap, run the savegame converter and you don't have to start a new game.).
 
 This is the original introduction written by Yacomo:
 
 >Please allow me a few words about my motivation in doing this...
-
+>
 >I always loved maps, guess since I first got my hands on the middle earth atlas. I always liked the infinity engine games as well, but those two things had nothing to do with each other...
-
+>
 >Well, nothing to do until I started playing the BP-BGT-NeJ-CtB-DSotSC-BH-NTotSC monster in early 2005. I became a fan of the Check the Bodies worldmap immediately and I fell in love with the spirit of the modding community shortly thereafter. I had to give it back something...
-
+>
 >What I never liked about the BP-BGT map was the mix of coloured and black and white icons. So I was already tinkering with the idea of creating coloured versions of all the Baldur's Gate map icons when Horred the Plague posted <a href="https://www.shsforums.net/topic/13954-artist-needed-for-worldmap-revision/">link</a> on the former forgottenwars forums...
-
->That was the starter I was waiting for! So I picked up the task, made myself comfortable with GIMP (who needs Photoshop - bah :smile: and this is the result - hope ya like it!
+>
+>That was the starter I was waiting for! So I picked up the task, made myself comfortable with GIMP (who needs Photoshop - bah :smile: and this is the result - hope ya like it!).
 
 At the beginning of the year 2006 Yacomo retired the first time from this mod and King Diamond and Weigo took over the worldmap. King Diamond, one of the WeiDU coding chiefs, made a fantastic new code for the worldmap. Weigo made a lot of small and large changes to the worldmaps.
 
@@ -57,7 +57,7 @@ One and a half year later Yacomo returned and he brought a new larger worldmap. 
 
 ## <a name="compat" id="compat"></a>Compatibility
 
-This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with or without the Throne of Bhaal (ToB) expansion, Baldur's Gate II: Enhanced Edition (BG2EE), the conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
+This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with or without the Throne of Bhaal (ToB) expansion, Baldur's Gate: Enhanced Edition (BG:EE), Baldur's Gate II: Enhanced Edition (BG2:EE), the conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
 
 This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please report them on the forum!<br>
 
@@ -171,10 +171,10 @@ This component adds two worldmap UI designs (Only for EE).
 ## <a name="faq" id="faq"></a>Frequently Asked Questions
 
 **Q: All or some map icons are on the wrong position?**  
-A: Reinstall the complete worldmap.
+A: Reinstall the complete mod list and worldmap from the scratch - most likly corrupted game save after reinstallation.
 
 **Q: I installed the worldmap, but there is no new worldmap in the game**  
-A: Either start a new game or use the savegame converter.
+A: Either start a new game or use the savegame converter (converter only works with oBG2).
 
 <div align="right"><a href="#top">Back to top</a></div>
 <hr>
@@ -195,7 +195,7 @@ A: Either start a new game or use the savegame converter.
 - **French translation**: Isaya.
 - **Russian translation**: prowler and Silent.
 - **Simplified Chinese translation**: MephistoSatanDevil and Jiaozi (canvas).
-- **Others**: Valiant, CBisson, Sir BillyBob, Horred the Plague, HardenCoonor, K4thos, Mad Mate, NIGHTMARE, hlidskialf, Seanas, Ascension, Per Olofsson, The Wizard, K'aeloree, White Agnus, p_zombie, abalabokhin, JohnBob, paladin84, GraionDilach, Spellholdstudios, G3, Blackwyrm, Kerzenburgforum, Rosenranken, Pocketplane.
+- **Others**: Valiant, CBisson, Sir BillyBob, Horred the Plague, HardenCoonor, K4thos, Mad Mate, NIGHTMARE, hlidskialf, Seanas, Ascension, Per Olofsson, The Wizard, K'aeloree, White Agnus, p_zombie, abalabokhin, JohnBob, paladin84, GraionDilach, SpellholdStudios, G3, BlackWyrm, Kerzenburgforum, Rosenranken, PocketPlane.
 - **Extended northern worldmap**: <br>
    Huge thanks to **JohnBob**, **p_zombie**, **paladin84** and **Roberciiik** for their cooperative work and passionate commitment to the creation of the extended northern worldmap in v13.
 

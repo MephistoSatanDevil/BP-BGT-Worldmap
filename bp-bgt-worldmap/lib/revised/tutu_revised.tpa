@@ -1,11 +1,11 @@
 ////////////////////////////////////////////
 //Standard Tutu areas and links
 ////////////////////////////////////////////
-COPY "bp-bgt-worldmap/2da/revised_tutu_areas.2da" "bp-bgt-worldmap/2da/revised_tutu_areas.2da"
+COPY "%MOD_FOLDER%/2da/revised_tutu_areas.2da" "%MOD_FOLDER%/2da/revised_tutu_areas.2da"
   LPM read_area_array_from_2da
 BUT_ONLY
 
-COPY "bp-bgt-worldmap/2da/revised_tutu_links.2da" "bp-bgt-worldmap/2da/revised_tutu_links.2da"
+COPY "%MOD_FOLDER%/2da/revised_tutu_links.2da" "%MOD_FOLDER%/2da/revised_tutu_links.2da"
   LPM read_link_array_from_2da
 BUT_ONLY
 
@@ -55,8 +55,8 @@ ACTION_IF FILE_EXISTS "worldmap/map_mods_trans.tra" BEGIN
   BUT_ONLY
 END
 
-COPY "bp-bgt-worldmap/language/english/worldmap.tra" "bp-bgt-worldmap/language/english/worldmap.tra" //To guard against incomplete translations
-     "bp-bgt-worldmap/language/%LANGUAGE%/worldmap.tra" "bp-bgt-worldmap/language/%LANGUAGE%/worldmap.tra"
+COPY "%MOD_FOLDER%/language/english/worldmap.tra" "%MOD_FOLDER%/language/english/worldmap.tra" //To guard against incomplete translations
+     "%MOD_FOLDER%/language/%LANGUAGE%/worldmap.tra" "%MOD_FOLDER%/language/%LANGUAGE%/worldmap.tra"
   LPM read_trans_array_from_2da
 BUT_ONLY
 
@@ -72,11 +72,11 @@ END
 
 ACTION_PHP_EACH mod_trans AS area => table BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME "%area%.are" BEGIN
-    COPY "bp-bgt-worldmap/language/english/revised/%table%_new_map_mods_trans.tra"
-         "bp-bgt-worldmap/language/english/revised/%table%_new_map_mods_trans.tra" //To guard against incomplete translations
+    COPY "%MOD_FOLDER%/language/english/revised/%table%_new_map_mods_trans.tra"
+         "%MOD_FOLDER%/language/english/revised/%table%_new_map_mods_trans.tra" //To guard against incomplete translations
 
-         "bp-bgt-worldmap/language/%LANGUAGE%/revised/%table%_new_map_mods_trans.tra"
-         "bp-bgt-worldmap/language/%LANGUAGE%/revised/%table%_new_map_mods_trans.tra"
+         "%MOD_FOLDER%/language/%LANGUAGE%/revised/%table%_new_map_mods_trans.tra"
+         "%MOD_FOLDER%/language/%LANGUAGE%/revised/%table%_new_map_mods_trans.tra"
       LPM read_trans_array_from_2da
     BUT_ONLY
   END
@@ -123,7 +123,7 @@ END
 ////////////////////////////////////////////
 
 //Adding Entrances to Tutu Areas to provide proper Entry Names for travel links
-INCLUDE "bp-bgt-worldmap/lib/revised/tutu_entrances.tpa"
+INCLUDE "%MOD_FOLDER%/lib/revised/tutu_entrances.tpa"
 
 //Removing Travel Triggers from FW2000 & FW1500 to enable WM6 travel on Werewolf Isle
 COPY_EXISTING ~FW1500.ARE~ ~OVERRIDE~
@@ -162,9 +162,9 @@ COPY_EXISTING ~FW2000.ARE~ ~OVERRIDE~
   LAUNCH_PATCH_MACRO ~DELETE_INFO_TRIGGER~
 BUT_ONLY_IF_IT_CHANGES//*************************************************FW2000.ARE
 
-COPY ~bp-bgt-worldmap/BMP/Tutu/FW2000SR.bmp~ ~override~
-COPY ~bp-bgt-worldmap/BMP/Tutu/FW1500SR.bmp~ ~override~
-COPY ~bp-bgt-worldmap/BMP/Tutu/FW1600SR.bmp~ ~override~
+COPY ~%MOD_FOLDER%/BMP/Tutu/FW2000SR.bmp~ ~override~
+COPY ~%MOD_FOLDER%/BMP/Tutu/FW1500SR.bmp~ ~override~
+COPY ~%MOD_FOLDER%/BMP/Tutu/FW1600SR.bmp~ ~override~
 
 // assigns area scripts to areas with none assigned
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~MACINIT.BCS~ THEN BEGIN
@@ -180,11 +180,11 @@ END
 
 // Proper Area Visibility
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~MACINIT.BCS~ THEN BEGIN // This is not an EasyTutu install
-  EXTEND_TOP ~FW2200.BCS~  ~bp-bgt-worldmap/BAF/Tutu/_AR2200.BAF~
-  EXTEND_TOP ~_AR2301.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR2301.BAF~
-  EXTEND_TOP ~_AR2400.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR2400.BAF~
-  EXTEND_TOP ~_AR2900.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR2900.BAF~
-  EXTEND_TOP ~_AR3304.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR3304.BAF~
+  EXTEND_TOP ~FW2200.BCS~  ~%MOD_FOLDER%/BAF/Tutu/_AR2200.BAF~
+  EXTEND_TOP ~_AR2301.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR2301.BAF~
+  EXTEND_TOP ~_AR2400.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR2400.BAF~
+  EXTEND_TOP ~_AR2900.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR2900.BAF~
+  EXTEND_TOP ~_AR3304.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR3304.BAF~
 
   COPY_EXISTING ~TRANZIG.BCS~ ~override~
     DECOMPILE_BCS_TO_BAF
@@ -194,7 +194,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~MACINIT.BCS~ THEN BEGIN // This is not an Eas
   BUT_ONLY
 
   COPY_EXISTING ~_AR3352.BCS~ ~override~
-    REPLACE_BCS_BLOCK ~bp-bgt-worldmap/baf/Tutu/oFW3352.baf~ ~bp-bgt-worldmap/baf/Tutu/nFW3352.baf~
+    REPLACE_BCS_BLOCK ~%MOD_FOLDER%/baf/Tutu/oFW3352.baf~ ~%MOD_FOLDER%/baf/Tutu/nFW3352.baf~
   BUT_ONLY_IF_IT_CHANGES
 
   COPY_EXISTING ~AR1901.BCS~ ~override~
@@ -203,13 +203,13 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~MACINIT.BCS~ THEN BEGIN // This is not an Eas
     COMPILE_BAF_TO_BCS
   BUT_ONLY_IF_IT_CHANGES
 END ELSE BEGIN
-  EXTEND_TOP ~_AR2200.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR2200.BAF~
-  EXTEND_TOP ~_AR2301.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR2301.BAF~
-  EXTEND_TOP ~_AR2400.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR2400.BAF~
-  EXTEND_TOP ~_AR2900.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR2900.BAF~
-  EXTEND_TOP ~_AR3304.BCS~ ~bp-bgt-worldmap/BAF/Tutu/_AR3304.BAF~
+  EXTEND_TOP ~_AR2200.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR2200.BAF~
+  EXTEND_TOP ~_AR2301.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR2301.BAF~
+  EXTEND_TOP ~_AR2400.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR2400.BAF~
+  EXTEND_TOP ~_AR2900.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR2900.BAF~
+  EXTEND_TOP ~_AR3304.BCS~ ~%MOD_FOLDER%/BAF/Tutu/_AR3304.BAF~
 
-  EXTEND_BOTTOM ~_AR3352.BCS~ ~bp-bgt-worldmap/baf/Tutu/nFW3352.baf~
+  EXTEND_BOTTOM ~_AR3352.BCS~ ~%MOD_FOLDER%/baf/Tutu/nFW3352.baf~
 
   COPY_EXISTING ~_AR1901.BCS~ ~override~
     DECOMPILE_BCS_TO_BAF

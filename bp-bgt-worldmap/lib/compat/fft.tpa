@@ -1,13 +1,13 @@
 //Areas
 LAF install_area_table
   STR_VAR
-    table = "bp-bgt-worldmap/compat/fft/areas.tbl"
+    table = "%MOD_FOLDER%/compat/fft/areas.tbl"
 END
 
 //Links
 LAF install_link_table
   STR_VAR
-    table = "bp-bgt-worldmap/compat/fft/links.tbl"
+    table = "%MOD_FOLDER%/compat/fft/links.tbl"
 END
 
 //Translations
